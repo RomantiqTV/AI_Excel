@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>700</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>700</width>
+    <height>300</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>700</width>
+    <height>300</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>10</number>
+    </property>
+    <property name="topMargin">
+     <number>10</number>
+    </property>
+    <property name="rightMargin">
+     <number>10</number>
+    </property>
+    <property name="bottomMargin">
+     <number>10</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="container">
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>20</number>
+       </property>
+       <property name="topMargin">
+        <number>20</number>
+       </property>
+       <property name="rightMargin">
+        <number>20</number>
+       </property>
+       <property name="bottomMargin">
+        <number>20</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="bg">
+         <property name="styleSheet">
+          <string notr="true">QFrame {
+    background-color: #282a36;
+    color: #f8f8f2;
+    border-radius: 50px;
+}</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QFrame" name="texts">
+            <property name="minimumSize">
+             <size>
+              <width>640</width>
+              <height>240</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>640</width>
+              <height>240</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background: none;</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QLabel" name="label_4">
+             <property name="geometry">
+              <rect>
+               <x>190</x>
+               <y>10</y>
+               <width>261</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Excel AI Formula v1.0.1</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+            <widget class="QFrame" name="frame">
+             <property name="geometry">
+              <rect>
+               <x>80</x>
+               <y>70</y>
+               <width>481</width>
+               <height>81</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QFrame {
+background-color: rgb(68, 71, 90);
+padding: 15px;
+padding-top: 0px;
+border-radius: 10px;
+}</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_4">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QLabel" name="label_5">
+                <property name="text">
+                 <string>Describe what your Excel cell should achieve:</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="lineEdit_2">
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QPushButton" name="pushButton_3">
+             <property name="geometry">
+              <rect>
+               <x>530</x>
+               <y>200</y>
+               <width>75</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+background-color: rgb(98, 114, 164);
+border-radius:5px;
+ color: #f8f8f2;
+}
+QPushButton::hover {
+background-color: #44475a;
+}</string>
+             </property>
+             <property name="text">
+              <string>Exit</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_4">
+             <property name="geometry">
+              <rect>
+               <x>280</x>
+               <y>170</y>
+               <width>91</width>
+               <height>51</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+background-color: #282a36;
+border-radius: 20px;
+color: #f8f8f2;
+border-style: solid;
+border-width: 1px;
+border-color: #f8f8f2;
+}
+
+QPushButton::hover {
+background-color: #6272a4;
+opacity: 1;
+animation: fadeinout 4s linear forwards;
+}</string>
+             </property>
+             <property name="text">
+              <string>Generate</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>160</y>
+               <width>81</width>
+               <height>81</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background: none;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_6">
+             <property name="geometry">
+              <rect>
+               <x>60</x>
+               <y>190</y>
+               <width>161</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">display: none;</string>
+             </property>
+             <property name="text">
+              <string>Generating, please wait...</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_2">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>160</y>
+               <width>81</width>
+               <height>81</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: #282a36;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_5">
+             <property name="geometry">
+              <rect>
+               <x>450</x>
+               <y>200</y>
+               <width>75</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+background-color: rgb(98, 114, 164);
+border-radius:5px;
+ color: #f8f8f2;
+}
+QPushButton::hover {
+background-color: #44475a;
+}</string>
+             </property>
+             <property name="text">
+              <string>Cancel</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_6">
+             <property name="geometry">
+              <rect>
+               <x>280</x>
+               <y>170</y>
+               <width>91</width>
+               <height>51</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+background-color: #282a36;
+border-radius: 20px;
+color: #f8f8f2;
+border-style: solid;
+border-width: 1px;
+border-color: #f8f8f2;
+}
+
+QPushButton::hover {
+background-color: #6272a4;
+opacity: 1;
+animation: fadeinout 4s linear forwards;
+}</string>
+             </property>
+             <property name="text">
+              <string>Copy</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButton_7">
+             <property name="geometry">
+              <rect>
+               <x>450</x>
+               <y>200</y>
+               <width>75</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+background-color: rgb(98, 114, 164);
+border-radius:5px;
+ color: #f8f8f2;
+}
+QPushButton::hover {
+background-color: #44475a;
+}</string>
+             </property>
+             <property name="text">
+              <string>New</string>
+             </property>
+            </widget>
+            <zorder>pushButton_6</zorder>
+            <zorder>label_2</zorder>
+            <zorder>label_4</zorder>
+            <zorder>frame</zorder>
+            <zorder>pushButton_3</zorder>
+            <zorder>pushButton_4</zorder>
+            <zorder>label</zorder>
+            <zorder>label_6</zorder>
+            <zorder>pushButton_5</zorder>
+            <zorder>pushButton_7</zorder>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
